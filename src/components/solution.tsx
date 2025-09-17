@@ -85,7 +85,7 @@ export default function SolutionSection(): JSX.Element {
 
     // @ts-ignore
     return (
-        <section className="bg-black text-white py-24 lg:py-32 relative overflow-hidden">
+        <section className="bg-black text-white py-24 lg:py-32 relative overflow-hidden" id={"solutions"}>
             {/* Subtle background elements */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(197,164,109,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(197,164,109,0.02)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_60%,rgba(197,164,109,0.05),transparent_70%)]"></div>

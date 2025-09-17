@@ -60,7 +60,7 @@ export default function Hero(): JSX.Element {
     };
 
     return (
-        <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden" id={"home"}>
             {/* Subtle grid overlay for depth */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(197,164,109,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(197,164,109,0.05)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
 
@@ -137,6 +137,7 @@ export default function Hero(): JSX.Element {
                             backgroundColor: '#D4B877'
                         }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
                         className="px-10 py-5 bg-[#C5A46D] hover:bg-[#D4B877] text-black font-bold text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl transform min-w-[200px]"
                     >
                         Get Started Now

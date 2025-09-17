@@ -105,10 +105,23 @@ export default function CTAContactSection(): JSX.Element {
 
         try {
             // Simulate API call
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            const data = await fetch("https://akielkucki.app.n8n.cloud/webhook-test/5872ed7b-26d7-430e-b4ae-c6450312b1a0", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    company: formData.company,
+                    phone: formData.phone,
+                    message: formData.message
+                })
+            });
+
 
             // Here you would typically send the data to your backend
-            console.log('Form submitted:', formData);
+            console.log('Form submitted:', data.json());
 
             setIsSubmitted(true);
             setFormData({
@@ -204,7 +217,7 @@ export default function CTAContactSection(): JSX.Element {
     }
 
     return (
-        <section className="bg-black text-white py-24 lg:py-32 relative overflow-hidden">
+        <section className="bg-black text-white py-24 lg:py-32 relative overflow-hidden" id={"contact"}>
             {/* Background elements */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(197,164,109,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(197,164,109,0.02)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(197,164,109,0.05),transparent_70%)]"></div>
@@ -307,7 +320,7 @@ export default function CTAContactSection(): JSX.Element {
                             </p>
                         </div>
 
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6" >
                             {/* Name Field */}
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">

@@ -78,7 +78,7 @@ export default function HowItWorksSection(): JSX.Element {
     };
 
     return (
-        <section className="bg-black text-white py-24 lg:py-32 relative overflow-hidden">
+        <section className="bg-black text-white py-24 lg:py-32 relative overflow-hidden" id={"how-it-works"}>
             {/* Subtle background elements */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(197,164,109,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(197,164,109,0.02)_1px,transparent_1px)] bg-[size:70px_70px]"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(197,164,109,0.04),transparent_70%)]"></div>
