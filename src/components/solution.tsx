@@ -187,6 +187,7 @@ export default function SolutionSection(): JSX.Element {
                                         className="flex flex-wrap gap-4"
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
                                         transition={{ delay: index * 0.2 + 0.6 }}
                                     >
                                         {solution.features.map((feature, featureIndex) => (
