@@ -88,7 +88,7 @@ export default function HowItWorksSection(): JSX.Element {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true }}
             >
                 {/* Header */}
                 {/*@ts-ignore*/}
@@ -110,7 +110,7 @@ export default function HowItWorksSection(): JSX.Element {
                         <motion.span
                             className="block text-[#C5A46D]"
                             initial={{ opacity: 0, y: 20 }}
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5, duration: 0.6 }}
                         >
@@ -144,8 +144,8 @@ export default function HowItWorksSection(): JSX.Element {
                                     variants={connectorVariants}
                                     initial="hidden"
                                     whileInView="visible"
-                                    viewport={{ once: true, amount: 0.2 }}
-                                    transition={{ delay: index * 0.3 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: index * 0.2 }}
                                 />
                             )}
 
@@ -160,7 +160,7 @@ export default function HowItWorksSection(): JSX.Element {
                                         }}
                                         initial={{ scale: 0 }}
                                         whileInView={{ scale: 1 }}
-                                        viewport={{ once: true, amount: 0.2 }}
+                                        viewport={{ once: true }}
 
                                         transition={{
                                             delay: index * 0.3 + 0.2,
@@ -176,7 +176,7 @@ export default function HowItWorksSection(): JSX.Element {
                                         whileHover={{ rotate: 5, scale: 1.1 }}
                                         initial={{ opacity: 0, rotate: -10 }}
                                         whileInView={{ opacity: 1, rotate: 0 }}
-                                        viewport={{ once: true, amount: 0.2 }}
+                                        viewport={{ once: true }}
 
                                         transition={{ delay: index * 0.3 + 0.4 }}
                                     >
@@ -190,7 +190,7 @@ export default function HowItWorksSection(): JSX.Element {
                                         className="mb-6"
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true, amount: 0.2 }}
+                                        viewport={{ once: true }}
 
                                         transition={{ delay: index * 0.2 + 0.1 }}
                                     >
@@ -206,7 +206,7 @@ export default function HowItWorksSection(): JSX.Element {
                                         className="text-gray-300 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl"
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
-                                        viewport={{ once: true, amount: 0.2 }}
+                                        viewport={{ once: true }}
 
                                         transition={{ delay: index * 0.3 + 0.1 }}
                                     >
@@ -217,7 +217,7 @@ export default function HowItWorksSection(): JSX.Element {
                                         className="flex flex-wrap gap-4"
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true, amount: 0.2 }}
+                                        viewport={{ once: true }}
 
                                         transition={{ delay: index * 0.3 + 0.7 }}
                                     >
@@ -231,10 +231,10 @@ export default function HowItWorksSection(): JSX.Element {
                                                     borderColor: 'rgba(197, 164, 109, 0.4)'
                                                 }}
                                                 initial={{ opacity: 0, scale: 0.8 }}
-                                                viewport={{ once: true, amount: 0.2 }}
+                                                viewport={{ once: true }}
                                                 whileInView={{ opacity: 1, scale: 1 }}
                                                 transition={{
-                                                    delay: index * 0.3 + 1 + detailIndex * 0.1,
+                                                    delay: index * 0.3 + detailIndex * 0.01,
                                                     type: "spring",
                                                     stiffness: 200
                                                 }}
@@ -251,7 +251,7 @@ export default function HowItWorksSection(): JSX.Element {
                                 <motion.div
                                     className="flex justify-center lg:hidden mt-12 mb-8"
                                     initial={{ opacity: 0, scale: 0.5 }}
-                                    viewport={{ once: true, amount: 0.2 }}
+                                    viewport={{ once: true }}
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     transition={{ delay: index * 0.3 + 1 }}
                                 >
@@ -283,7 +283,7 @@ export default function HowItWorksSection(): JSX.Element {
                         <motion.h3
                             className="text-3xl md:text-4xl lg:text-5xl font-black mb-12 leading-tight"
                             initial={{ opacity: 0, y: 20 }}
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
                         >
@@ -291,7 +291,7 @@ export default function HowItWorksSection(): JSX.Element {
                             <motion.span
                                 className="block text-[#C5A46D] mt-2"
                                 initial={{ opacity: 0, scale: 0.8 }}
-                                viewport={{ once: true, amount: 0.2 }}
+                                viewport={{ once: true }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.4, type: "spring", stiffness: 150 }}
                             >
@@ -312,7 +312,7 @@ export default function HowItWorksSection(): JSX.Element {
                                     key={index}
                                     className="text-center p-8 rounded-2xl bg-black/30 backdrop-blur-sm border border-[#C5A46D]/10 group hover:border-[#C5A46D]/30 transition-all duration-300"
                                     initial={{ opacity: 0, y: 30 }}
-                                    viewport={{ once: true, amount: 0.2 }}
+                                    viewport={{ once: true }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ delay: item.delay }}
                                     whileHover={{
@@ -323,7 +323,7 @@ export default function HowItWorksSection(): JSX.Element {
                                     <motion.div
                                         className="text-3xl md:text-4xl font-black text-[#C5A46D] mb-4 group-hover:scale-110 transition-transform duration-200"
                                         initial={{ scale: 0 }}
-                                        viewport={{ once: true, amount: 0.2 }}
+                                        viewport={{ once: true }}
                                         whileInView={{ scale: 1 }}
                                         transition={{
                                             delay: item.delay + 0.2,
@@ -342,7 +342,7 @@ export default function HowItWorksSection(): JSX.Element {
                         <motion.p
                             className="text-gray-300 text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed mb-10"
                             initial={{ opacity: 0 }}
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1 }}
                             transition={{ delay: 1.2 }}
                         >
@@ -354,7 +354,7 @@ export default function HowItWorksSection(): JSX.Element {
                         {/* CTA */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
-                            viewport={{ once: true, amount: 0.2 }}
+                            viewport={{ once: true }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 1.4 }}
                         >
@@ -405,7 +405,7 @@ export default function HowItWorksSection(): JSX.Element {
             <motion.div
                 className="absolute top-1/4 right-8 w-1 h-20 bg-gradient-to-b from-[#C5A46D] to-transparent opacity-15"
                 initial={{ scaleY: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true }}
                 whileInView={{ scaleY: 1 }}
                 transition={{ delay: 2, duration: 1.5 }}
             />

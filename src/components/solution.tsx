@@ -118,6 +118,8 @@ export default function SolutionSection(): JSX.Element {
                             className="block text-[#C5A46D]"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
+
                             transition={{ delay: 0.5, duration: 0.6 }}
                         >
                             Client-Getting System
@@ -160,6 +162,8 @@ export default function SolutionSection(): JSX.Element {
                                         className="text-3xl md:text-4xl font-black mb-4 group-hover:text-[#C5A46D] transition-colors duration-300"
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
+                                        viewport={{ once: true, amount: 0.2 }}
+
                                         transition={{ delay: index * 0.2 }}
                                     >
                                         {solution.title}
@@ -169,6 +173,8 @@ export default function SolutionSection(): JSX.Element {
                                         className="text-xl md:text-2xl text-[#C5A46D] font-bold mb-6 leading-relaxed"
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true, amount: 0.2 }}
+
                                         transition={{ delay: index * 0.2 + 0.2 }}
                                     >
                                         {solution.benefit}
@@ -178,6 +184,8 @@ export default function SolutionSection(): JSX.Element {
                                         className="text-gray-300 text-lg mb-8 leading-relaxed max-w-2xl"
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
+                                        viewport={{ once: true, amount: 0.2 }}
+
                                         transition={{ delay: index * 0.2 + 0.4 }}
                                     >
                                         {solution.description}
@@ -206,6 +214,8 @@ export default function SolutionSection(): JSX.Element {
                                                     type: "spring",
                                                     stiffness: 200
                                                 }}
+                                                viewport={{ once: true, amount: 0.2 }}
+
                                             >
                                                 ✓ {feature}
                                             </motion.span>
@@ -219,6 +229,7 @@ export default function SolutionSection(): JSX.Element {
                                 <motion.div
                                     className="mt-12 ml-20 h-px bg-gradient-to-r from-[#C5A46D]/20 via-[#C5A46D]/10 to-transparent"
                                     initial={{ scaleX: 0 }}
+                                    viewport={{ once: true, amount: 0.2 }}
                                     whileInView={{ scaleX: 1 }}
                                     transition={{ delay: index * 0.2 + 0.8, duration: 0.8 }}
                                 />
@@ -244,6 +255,7 @@ export default function SolutionSection(): JSX.Element {
                         <motion.h3
                             className="text-3xl md:text-4xl lg:text-5xl font-black mb-6 leading-tight"
                             initial={{ opacity: 0, y: 20 }}
+                            viewport={{ once: true, amount: 0.2 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
                         >
@@ -251,6 +263,7 @@ export default function SolutionSection(): JSX.Element {
                             <motion.span
                                 className="block text-[#C5A46D] mt-2"
                                 initial={{ opacity: 0, scale: 0.8 }}
+                                viewport={{ once: true, amount: 0.2 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: 0.4, type: "spring", stiffness: 150 }}
                             >
@@ -261,6 +274,7 @@ export default function SolutionSection(): JSX.Element {
                         <motion.p
                             className="text-gray-300 text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed"
                             initial={{ opacity: 0 }}
+                            viewport={{ once: true, amount: 0.2 }}
                             whileInView={{ opacity: 1 }}
                             transition={{ delay: 0.6 }}
                         >
@@ -288,6 +302,7 @@ export default function SolutionSection(): JSX.Element {
                                     <motion.div
                                         className="text-5xl md:text-6xl font-black text-[#C5A46D] mb-4 group-hover:scale-110 transition-transform duration-200"
                                         initial={{ scale: 0 }}
+                                        viewport={{ once: true, amount: 0.2 }}
                                         whileInView={{ scale: 1 }}
                                         transition={{
                                             delay: 0.8 + index * 0.2,
@@ -308,6 +323,7 @@ export default function SolutionSection(): JSX.Element {
                         <motion.div
                             className="mt-12"
                             initial={{ opacity: 0, y: 30 }}
+                            viewport={{ once: true, amount: 0.2 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 1.4 }}
                         >
@@ -349,6 +365,7 @@ export default function SolutionSection(): JSX.Element {
             <motion.div
                 className="absolute top-1/3 left-8 w-1 h-16 bg-gradient-to-b from-[#C5A46D] to-transparent opacity-20"
                 initial={{ scaleY: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
                 whileInView={{ scaleY: 1 }}
                 transition={{ delay: 2, duration: 1.2 }}
             />
@@ -356,6 +373,7 @@ export default function SolutionSection(): JSX.Element {
             <motion.div
                 className="absolute bottom-1/4 right-8 w-2 h-8 bg-gradient-to-t from-[#C5A46D] to-transparent opacity-15"
                 initial={{ scaleY: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
                 whileInView={{ scaleY: 1 }}
                 transition={{ delay: 2.5, duration: 1 }}
             />

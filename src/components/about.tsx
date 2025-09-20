@@ -250,6 +250,7 @@ export default function CTAContactSection(): JSX.Element {
                             <motion.span
                                 className="block text-[#C5A46D] mt-2"
                                 initial={{ opacity: 0, y: 20 }}
+                                viewport={{ once: true, amount: 0.2 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5, duration: 0.6 }}
                             >
